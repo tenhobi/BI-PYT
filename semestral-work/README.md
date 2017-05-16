@@ -16,3 +16,5 @@ Přitom na načtení (a případné uložení) obrázků můžete použít (a as
 Co se aplikace týká, může to být buď klasické GUI (tkinter není podmínkou, klidně si to pište třeba v Qtéčku), v kterémžto případě očekávám u prováděných operací vizuální odezvu nad zpracovávaným obrázkem, nebo konzolová aplikace, v kterémžto případě zase musí obsahovat velmi podrobnou nápovědu, jak se má používat (což se naštěstí v Python'u píše zrovna docela snadno).
 
 ## Screenshot
+
+![](_screenshot.png)
