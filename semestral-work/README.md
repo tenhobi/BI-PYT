@@ -1,6 +1,6 @@
 # Semestral work
 
-## Assignment (in czech)
+## Assignment (in Czech)
 
 Výstupem semestrální práce bude aplikace napsaná v Python'u 3.x, která dokáže načíst vstupní obrázek a na něm provádět přinejmenším následující grafické operace:
 
