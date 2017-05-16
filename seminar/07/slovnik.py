@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 tabulka = {
     "AAA": "[cea]",
     "AAC": "[Acf]",

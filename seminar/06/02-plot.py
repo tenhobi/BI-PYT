@@ -37,7 +37,6 @@ print(data)
 
 plt.plot([i for i in range(0, len(sequence), STEP)], data, 'g+', label='průměr přes sliding window v náhodné sekvenci')
 
-
 plt.xlabel('pořadí v sekvenci')
 plt.ylabel('obsah GC')
 plt.title('Procentuální zastoupení GC v genomu')

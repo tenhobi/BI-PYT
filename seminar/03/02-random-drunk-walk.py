@@ -17,6 +17,7 @@ def nh(N, k, P):
             k += 1
     return 'H' if k == 0 else 'P', steps
 
+
 attempts = {}
 for p in P:
     for k in K:

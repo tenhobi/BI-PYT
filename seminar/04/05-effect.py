@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import random
 
-all = 512
+whole = 512
 a = 50
 b = 90
 
@@ -19,5 +19,5 @@ with open('05-output.pgm', 'w') as f:
 
         f.write(f'125 {a} 100 ' * a)
         f.write(f'{a} 0 {b - a} ' * (b - a))
-        f.write(f'{b} 219 178 ' * (all - b))
+        f.write(f'{b} 219 178 ' * (whole - b))
         f.write('\n')

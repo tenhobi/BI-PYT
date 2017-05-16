@@ -1,0 +1,3 @@
+*.pbm
+*.pgm
+!05-gallery/*

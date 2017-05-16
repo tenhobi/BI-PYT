@@ -12,10 +12,9 @@ class CRCError(Exception):
 
 
 def get_next_chunk(f):
-    # DATA LENGTH
     while True:
+        # DATA LENGTH
         data_len = f.read(4)
-        #	print(data_len)
         data_len = unpack('>I', data_len)[0]
 
         # HEADER
@@ -26,8 +25,7 @@ def get_next_chunk(f):
 
         # CRC
         crc = f.read(4)
-        # if zlib.crc32(header + data) != crc:
-        #	raise CRCError( ' in chunk ' + header.decode('ascii'))
+
         # RETURN
         yield header.decode('ascii'), data
 
@@ -80,6 +78,3 @@ for i in range(0, len(idat), line_len):
 with open('sachovnice.pnm', 'bw') as f:
     f.write(b'P6\n' + str(width).encode('ascii') + b' ' + str(height).encode('ascii') + b'\n255\n')
     f.write(pnm_data)
-
-
-
