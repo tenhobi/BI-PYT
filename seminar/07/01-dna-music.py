@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import gzip
-from slovnik import tabulka
+from .slovnik import *
 
 dictionary = {}
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from VisualScrewdriver import *
+from .VisualScrewdriver import *
 
 vsd = VisualScrewdriver()
 vsd.commandHelp()
