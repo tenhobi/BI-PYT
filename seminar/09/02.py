@@ -4,9 +4,6 @@ import numpy as np
 
 cols, rows = get_terminal_size()
 
-# cols //= 4
-# rows //= 4
-
 display = np.zeros([rows, cols], dtype=np.uint8)
 
 board = display[1:-1, 1:-1]
