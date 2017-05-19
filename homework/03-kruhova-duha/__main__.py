@@ -26,18 +26,17 @@ image_data = b''
 
 for y in range(0, WIDTH):
     for x in range(0, WIDTH):
-        # rainbow pixel
+        # pixel for rainbow
         if get_distance([y, x]) <= RADIUS:
             pixel = list(colorsys.hsv_to_rgb(HSV_tuples[get_angle([y, x])], 1, 1))
+            # percentage value to range value 0-255
             pixel[0] = int(pixel[0] * 255)
             pixel[1] = int(pixel[1] * 255)
             pixel[2] = int(pixel[2] * 255)
             image_data += bytes(pixel)
-        # white pixel for background
+        # pixel for background
         else:
-            image_data += b'\xff'
-            image_data += b'\xff'
-            image_data += b'\xff'
+            image_data += bytes([255] * 3)
 
 with open('rainbow-circle.pnm', 'bw') as f:
     f.write(b'P6\n' + str(WIDTH).encode('ascii') + b' ' + str(WIDTH).encode('ascii') + b'\n255\n')
