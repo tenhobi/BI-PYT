@@ -12,6 +12,7 @@ x = cols // 2
 y = rows // 2
 print(f'\033[{y};{x}H', end='', flush=True)
 
+# initialize data
 matrix = [[0] * (cols + 1) for i in range(rows + 1)]
 directions = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
 
