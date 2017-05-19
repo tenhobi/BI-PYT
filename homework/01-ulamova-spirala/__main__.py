@@ -60,7 +60,7 @@ while True:
         distance = next(distance_generator)
         direction = next(direction_generator)
         for _ in range(0, distance):
-            modifiers = ""
+            modifiers = ''
 
             if number == 1:
                 modifiers += '\033[41m'

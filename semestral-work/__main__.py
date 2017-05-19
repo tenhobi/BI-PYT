@@ -8,35 +8,35 @@ while True:
     command = input()
     commandName = command.strip().split(' ', 1)[0]  # first world
 
-    if commandName == "exit":
+    if commandName == 'exit':
         vsd.commandExit()
-    elif commandName == "help":
+    elif commandName == 'help':
         vsd.commandHelp()
-    elif commandName == "save":
+    elif commandName == 'save':
         vsd.commandSave()
-    elif commandName == "autosave":
+    elif commandName == 'autosave':
         vsd.commandAutosave()
-    elif commandName == "new":
+    elif commandName == 'new':
         vsd.commandNew()
-    elif commandName == "reset":
+    elif commandName == 'reset':
         vsd.commandReset()
-    elif commandName == "rotateR":
+    elif commandName == 'rotateR':
         vsd.commandRotateR()
-    elif commandName == "rotateL":
+    elif commandName == 'rotateL':
         vsd.commandRotateL()
-    elif commandName == "mirrorX":
+    elif commandName == 'mirrorX':
         vsd.commandMirrorX()
-    elif commandName == "mirrorY":
+    elif commandName == 'mirrorY':
         vsd.commandMirrorY()
-    elif commandName == "invert":
+    elif commandName == 'invert':
         vsd.commandInvert()
-    elif commandName == "dark":
+    elif commandName == 'dark':
         vsd.commandDark()
-    elif commandName == "light":
+    elif commandName == 'light':
         vsd.commandLight()
-    elif commandName == "greyscale":
+    elif commandName == 'greyscale':
         vsd.commandGreyscale()
-    elif commandName == "highlight":
+    elif commandName == 'highlight':
         vsd.commandHighlight()
     else:
         print("Command not found.")

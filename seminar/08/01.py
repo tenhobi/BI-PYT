@@ -14,5 +14,5 @@ print(data[0, 0])
 data_out = 255 - data
 print(data_out[0, 0])
 
-out = Image.fromarray(data_out, "RGB")
+out = Image.fromarray(data_out, 'RGB')
 out.save('negative.jpg')

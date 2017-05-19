@@ -15,7 +15,7 @@ printx('\033[1;35;40m')
 
 while True:
     for i in range(1, 61):
-        printx(f"{i:2}")
+        printx(f'{i:2}')
         flushx()
         time.sleep(0.1)
         printx('\b\b')

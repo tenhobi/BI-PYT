@@ -24,10 +24,11 @@ while True:
         x += directions[direction][0]
         y += directions[direction][1]
 
-        # change visual of current cell
+        # change visual level of current cell
         if matrix[y][x] < 7:
             matrix[y][x] += 1
 
+        # draw visual level of current cell
         print(f'\033[{y};{x}H\033[4{matrix[y][x]}m \033[0m', end='', flush=True)
 
         sleep(0.02)

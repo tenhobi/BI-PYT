@@ -15,6 +15,7 @@ class VisualScrewdriver:
 
     @staticmethod
     def commandExit():
+        exit()
         pass
 
     @staticmethod
@@ -45,19 +46,19 @@ If you want to apply commands to raw image, use `reset` command first.
             self.noImageLoaded()
             return
 
-        if not os.path.exists("export"):
-            os.makedirs("export")
+        if not os.path.exists('export'):
+            os.makedirs('export')
 
-        while os.path.isfile("export/" + str(self.imageCounter) + ".png"):
+        while os.path.isfile('export/' + str(self.imageCounter) + '.png'):
             self.imageCounter += 1
 
-        Image.fromarray(self.imageData, "RGB").save("export/" + str(self.imageCounter) + ".png")
-        print("Saving image into", "export/" + str(self.imageCounter) + ".png", "file.")
+        Image.fromarray(self.imageData, 'RGB').save('export/' + str(self.imageCounter) + '.png')
+        print(f"Saving image into export/{self.imageCounter}.png file.")
         self.imageCounter += 1
 
     def commandAutosave(self):
         self.autoSave = not self.autoSave
-        print("Toggling autosave to", self.autoSave)
+        print(f'Toggling autosave to {self.autoSave}.')
 
     def commandNew(self):
         self.imagePath = input("Enter image file: ")

@@ -11,5 +11,5 @@ dataSource[...] = dataSource & 0xF8
 dataSecret[...] = (dataSecret & 0xE0) >> 5
 dataSource = dataSource + dataSecret
 
-out = Image.fromarray(dataSource, "RGB")
+out = Image.fromarray(dataSource, 'RGB')
 out.save('final2.png')

@@ -7,5 +7,5 @@ data = np.array(img)
 
 data[...] = (data & 0x07) << 5
 
-out = Image.fromarray(data, "RGB")
+out = Image.fromarray(data, 'RGB')
 out.save('final.png')

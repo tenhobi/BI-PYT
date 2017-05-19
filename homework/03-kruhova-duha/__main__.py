@@ -29,7 +29,7 @@ for y in range(0, WIDTH):
         # pixel for rainbow
         if get_distance([y, x]) <= RADIUS:
             pixel = list(colorsys.hsv_to_rgb(HSV_tuples[get_angle([y, x])], 1, 1))
-            # percentage value to range value 0-255
+            # percentage value 0.0-1.0 to range value 0-255
             pixel[0] = int(pixel[0] * 255)
             pixel[1] = int(pixel[1] * 255)
             pixel[2] = int(pixel[2] * 255)

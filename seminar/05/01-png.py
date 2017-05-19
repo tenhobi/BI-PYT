@@ -46,10 +46,6 @@ with open('sachovnice.png', 'br') as f:
         raise NotPNGError
     # je to (asi) PNG, tak ho zkusime nacist
 
-    '''	
-        for chunk in get_next_chunk(f):
-            print(chunk)
-    '''
     for header, data in get_next_chunk(f):
         img[header] = data
 # IHDR
