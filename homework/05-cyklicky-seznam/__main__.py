@@ -13,6 +13,7 @@ print(7, "...", xs[-10])
 print(8, "...", xs[-11])
 print(9, "...", xs[::3])
 print(10, "...", xs[::-3])
+print(11, "...", xs[::15])
 
 for x in xs:
     print(x)

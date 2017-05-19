@@ -28,9 +28,3 @@ class CyclicList:
             return self._data[key % len(self._data)]
         else:
             raise Exception("Invalid argument type.")
-
-    def first(self):
-        return self._data[0]
-
-    def last(self):
-        return self._data[-1]
