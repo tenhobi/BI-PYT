@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import math
 import os
-import time
 
 NUM_SIZE = 5
 
@@ -62,8 +61,12 @@ while True:
         direction = next(direction_generator)
         for _ in range(0, distance):
             modifiers = ""
+
+            if number == 1:
+                modifiers += '\033[41m'
+
             if is_prime(number):
-                modifiers += "\033[1;31m"
+                modifiers += '\033[1;31m'
 
             print(f'\033[{y};{x}H{modifiers}{str(number).rjust(NUM_SIZE)}\033[0m', end='', flush=True)
 
@@ -81,7 +84,7 @@ while True:
                 raise ValueError("Impossible direction value.")
 
     # no more space in window
-    if y <= 1 or x <= 1 or y >= rows or x >= cols:
+    if not ((1 < y < rows) and (1 < x < cols)):
         break
 
 print(f'\033[0m\033[{rows};0H', end='', flush=True)

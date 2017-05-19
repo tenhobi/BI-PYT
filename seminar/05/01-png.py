@@ -44,7 +44,7 @@ with open('sachovnice.png', 'br') as f:
     # test na PNG:
     if png_header != b'\x89PNG\r\n\x1a\n':
         raise NotPNGError
-    # je to (asi ) PNG, tak ho zkusime nacist
+    # je to (asi) PNG, tak ho zkusime nacist
 
     '''	
         for chunk in get_next_chunk(f):
