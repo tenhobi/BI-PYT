@@ -17,4 +17,6 @@ Co se aplikace týká, může to být buď klasické GUI (tkinter není podmínk
 
 ## Screenshot
 
+My final version of my semestral work. 
+
 ![](_screenshot.png)

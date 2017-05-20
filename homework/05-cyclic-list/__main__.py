@@ -17,3 +17,7 @@ print(11, '...', xs[::15])
 
 for x in xs:
     print(x)
+
+
+for x in xs:
+    print()

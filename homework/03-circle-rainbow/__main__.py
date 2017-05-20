@@ -2,7 +2,7 @@
 import colorsys
 import math
 
-WIDTH = 200
+WIDTH = 500
 RADIUS = WIDTH / 2
 
 NUMBER_OF_SAMPLES = 360
