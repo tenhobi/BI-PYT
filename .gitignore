@@ -1,8 +1,1 @@
-# project related stuff
 __pycache__/
-
-# IDEs and editors
-.idea/
-
-# other
-.DS_Store
