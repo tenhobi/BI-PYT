@@ -1,4 +1,4 @@
-# Homework
+# Homeworks
 
 ## Ulam spiral
 
