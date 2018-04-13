@@ -1,6 +1,6 @@
 # BI-PYT
 
-My work on BI-PYT in semester B162 at FIT CTU.
+My work on BI-PYT in semester B162 at [FIT CTU](https://fit.cvut.cz/en).
 
 ## TL;DR
 
